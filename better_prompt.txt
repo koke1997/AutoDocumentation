@@ -1,0 +1,25 @@
+I need you to generate comprehensive documentation for this Scala code file.
+
+Let me first load the code:
+[TOOL: read_file]{{file_path}}[/TOOL]
+
+Please create detailed reStructuredText (RST) documentation with:
+
+1. A clear class/object heading with proper RST formatting
+2. A detailed 2-3 sentence description explaining the purpose and role of this class
+3. Complete documentation for ALL methods including:
+   - Parameters with types and descriptions
+   - Return types and descriptions
+   - Usage examples where appropriate
+4. Documentation for all fields/values with types and descriptions
+
+Some important notes:
+- DO NOT include any debugging messages like "Checking for updates"
+- Ensure all documentation is complete and well-structured
+- Use proper RST formatting for code references with double backticks
+- Include a note at the top that documentation was auto-generated
+
+When you're done, please save the documentation to:
+[TOOL: save_documentation]{{output_file_path}}
+<your generated RST content>
+[/TOOL]

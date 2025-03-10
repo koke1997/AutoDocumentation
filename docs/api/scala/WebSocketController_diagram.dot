@@ -1,0 +1,11 @@
+digraph "Class Diagram" {
+  rankdir=LR;
+  node [shape=box, style="filled"];
+  fontname="Helvetica";
+  "WebSocketController" [label="WebSocketController\n(class)\ncontrollers", fillcolor="orange", penwidth=2];
+  "WebSocketActor" [label="WebSocketActor\n(class)\ncontrollers", fillcolor="lightblue", penwidth=1];
+  "Client" [label="Client\n(object)\nmodels", fillcolor="lightyellow", penwidth=1];
+  "WebSocketController" -> "WebSocketActor" [label="uses", style="dashed", color="gray"];
+  "WebSocketController" -> "Client" [label="uses", style="dashed", color="gray"];
+  "WebSocketActor" -> "WebSocketController" [label="uses", style="dashed", color="gray"];
+}
